@@ -12,9 +12,16 @@
 */
 
 Route::get('/', function () {
-    return 'a';
+    return view('auth.login');
 });
 
-Route::get('/apis', function() {
-	return 'as';
-});
+Auth::routes();
+Route::get('/', 'DashboardController@index');
+Route::get('broadcast', 'DashboardController@broadcast');
+
+Route::get('/home', 'DashboardController@index')->name('home');
+Route::get('report','ReportController@index');
+Route::get('newsReport','NewsReportController@index');
+
+
+Route::post('broadcast/addBroadcast','DashboardController@addBroadcast');
