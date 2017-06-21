@@ -64,7 +64,7 @@ License: You must have a valid license purchased only from themeforest(the above
             <form class="login-form" action="{{ url('/login') }}" method="post">
                 {{ csrf_field() }}
                 <h3 class="form-title font-green">
-                    <img src="/attachment/lambang_polri.png" style="width:100px;height:100px;">
+                    <img src="attachment/lambang_polri.png" style="width:100px;height:100px;">
                 </h3>
                 <div class="alert alert-danger display-hide">
                     <button class="close" data-close="alert"></button>
