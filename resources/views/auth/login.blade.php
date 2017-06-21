@@ -54,7 +54,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- BEGIN LOGO -->
         <div class="logo">
             <a href="index.html">
-                <img src="attachment/idaman.svg" style="width:200px;height:200px;">
+                <img src="attachment/idaman.svg" style="width:200px;">
             </a>
         </div>
         <!-- END LOGO -->

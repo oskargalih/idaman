@@ -75,15 +75,15 @@ dbRefLaporanPerPolda.on('child_added', snap => {
     var loc = {lat: snap.val().lat, lng:snap.val().lon};
 addMarker(snap.val().description, loc, snap.val().location, 'Rifqi', 'green');
 $('#events').click();
-//var audio = new Audio('alarm2.mp3');
-//audio.play();
+var audio = new Audio('alarm2.mp3');
+audio.play();
 });
 
 dbRefDaruratPerPolda.on('child_added', snap => {
     var loc = {lat: snap.val().lat, lng:snap.val().lon};
 addMarker('Darurat!', loc, snap.val().location, 'Rifqi', 'red');
 var audio = new Audio('alarm.mp3');
-// audio.play();
+ audio.play();
 });
 
 // dbRefLaporanPerPolda.on('child_removed', snap => {
